@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <title>보도자료 view</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://kit.fontawesome.com/9087f21017.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <link rel="stylesheet" href="../assets/css/import.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="fixed active">
+            <!-- pc일 때 스크롤 시 header에 active클래스 추가. -->
+            <div class="header_pc">
+                <h1>
+                    <a href="../index.html">
+                        logo
+                    </a>
+                </h1>
+
+                <div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <span>회사소개</span>
+                            </li>
+                            <li>
+                                <span></span>
+                            </li>
+                            <li>
+                                <span></span>
+                            </li>
+                            <li>
+                                <span>설비현황</span>
+                            </li>
+                            <li>
+                                <span>홍보센터</span>
+                            </li>
+                            <li>
+                                <span>고객센터</span>
+                            </li>
+                        </ul>
+                        <div class="megaMenu">
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li class="none">
+                                            <a href="../aboutUs/company_overview.html">회사소개</a>
+                                        </li>
+                                        <li>
+                                            <a href="../aboutUs/company_overview.html">회사개요</a>
+                                        </li>
+                                        <li>
+                                            <a href="../aboutUs/history.html">연혁</a>
+                                        </li>
+                                        <li>
+                                            <a href="../aboutUs/businessSite_introduction.html">사업장소개</a>
+                                        </li>
+                                        <li>
+                                            <a href="../aboutUs/export_status.html">수출현황</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="none">
+                                            <a href="../liebherr/marine_engine_liebherr.html">
+                                                <img src="../assets/images/liebherr_logo_sub.png" alt="liebherr logo">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../liebherr/marine_engine_liebherr.html">선박용 엔진</a>
+                                        </li>
+                                        <li>
+                                            <a href="../liebherr/generator_engine_liebherr.html">발전기 엔진</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="none">
+                                            <a href="../hyundai/marine_engine_hyundai.html">
+                                                <img src="../assets/images/hyundai_logo_sub.png" alt="hyundai logo">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../hyundai/marine_engine_hyundai.html">선박용 엔진</a>
+                                        </li>
+                                        <li>
+                                            <a href="../hyundai/generator_engine_hyundai.html">발전기 엔진</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="none">
+                                            <a href="../equipment_status/equipment_status.html">설비현황</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="none">
+                                            <a href="../pr_center/press_release.html">홍보센터</a>
+                                        </li>
+                                        <li>
+                                            <a href="../pr_center/press_release.html">보도자료</a>
+                                        </li>
+                                        <li>
+                                            <a href="../pr_center/technic_article.html">기술자료</a>
+                                        </li>
+                                        <li>
+                                            <a href="../pr_center/promotional_materials_catalogue.html">홍보자료</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li class="none">
+                                            <a href="../customer_service_center/contactUs.html">고객센터</a>
+                                        </li>
+                                        <li>
+                                            <a href="../customer_service_center/contactUs.html">문의하기</a>
+                                        </li>
+                                        <li>
+                                            <a href="../customer_service_center/FAQ.html">FAQ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="rightBox">
+                        <div class="langBox">
+                            <button></button>
+                            <div>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- 모바일 헤더 : 스크롤 시 top이라는 클래스가 붙은 div에 active클래스 추가. -->
+            <!-- hamburger 버튼 클릭 시 header_mo에 active클래스 추가. -->
+            <div class="header_mo">
+                <div class="top">
+                    <h1>
+                        <a href="../index.html">
+                            logo
+                        </a>
+                    </h1>
+                    <button class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <span>
+                                <span>회사소개</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../aboutUs/company_overview.html">회사개요</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutUs/history.html">연혁</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutUs/export_status.html">수출현황</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutUs/businessSite_introduction.html">사업장소개</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span><img src="../assets/images/liebherr_logo_sub.png" alt="liebherr logo"></span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../liebherr/marine_engine_liebherr.html">선박용 엔진</a>
+                                </li>
+                                <li>
+                                    <a href="../liebherr/generator_engine_liebherr.html">발전기 엔진</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span><img src="../assets/images/hyundai_logo_sub.png" alt="hyundai logo"></span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../hyundai/marine_engine_hyundai.html">선박용 엔진</a>
+                                </li>
+                                <li>
+                                    <a href="../hyundai/generator_engine_hyundai.html">발전기 엔진</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../equipment_status/equipment_status.html">설비현황</a>
+                        </li>
+                        <li>
+                            <span>
+                                <span>홍보센터</span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../pr_center/press_release.html">보도자료</a>
+                                </li>
+                                <li>
+                                    <a href="../pr_center/technic_article.html">기술자료</a>
+                                </li>
+                                <li>
+                                    <a href="../pr_center/promotional_materials_catalogue.html">홍보자료</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>
+                                <span>고객센터</span>
+                                <span><img src="../assets/images/header_subArrow.png" alt="arrow"></span>
+                            </span>
+                            <ul class="mo_sub_menu">
+                                <li>
+                                    <a href="../customer_service_center/contactUs.html">문의하기</a>
+                                </li>
+                                <li>
+                                    <a href="../customer_service_center/FAQ.html">FAQ</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="rightBox">
+                        <div class="langBox">
+                            <button class="langBtn_ko active">KO</button>
+                            <button class="langBtn_en">EN</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header Fin -->
+
+        <div class="subPage pr_center press_release_view">
+            <div class="lnb">
+                <div>
+                    <h2>보도자료</h2>
+                    <div>
+                        <span>Home</span>
+                        <span>홍보센터</span>
+                        <span>보도자료</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btnBox">
+                <div class="btn_2">
+                    <a href="../pr_center/press_release.html" class="active">보도자료</a>
+                    <a href="../pr_center/technic_article.html">기술자료</a>
+                    <a href="../pr_center/promotional_materials_catalogue.html">홍보자료</a>
+                </div>
+            </div>
+
+            <div class="contentBox">
+                <span>현대엔테크 소식</span>
+                <h3>
+                    전남도, 인도 첸나이 100만 달러 수출계약… 현대엔테크는
+                    선박용 엔진·발전기 출품
+                </h3>
+                <div class="imgBox">
+                    <img src="../assets/images/pr_center_view.png" alt="보도자료 view">
+                </div>
+                <div class="txtBox">
+                    <p>전남도는 인도 첸나이에 시장개척단을 파견, 지난 12일(현지 시각) 100만 달러 규모의 수출계약을 체결했다고 13일 밝혔다.</p>
+                    <p>
+                        수출상담회에서 좋은영농조합법인은 전남의 과일음료를 인도 홋카이도(대표 프라부)와 쓰리에프인더스트리(대표 제텐드라고엔카)에 각각 50만 
+                        달러, 30만 달러 수출계약을 했다.
+                    </p>
+                    <p>(주)골든힐은 시너지바이오푸드(대표 푸르쇼담)와 김, 다시마가루 등 농수산식품을 10만 달러 수출협약을 체결했다.</p>
+                    <p>㈜유니온도 릴라이어블 코퍼레이션(대표 사비르)과 친환경 흙경화제 제조기술을 10만 달러에 이전하는 수출협약을 맺었다.</p>
+                    <p>
+                        홋카이도와 쓰리에프인더스트리는 전남의 친환경 과일음료를 수입해 인도에 유통할 예정이다. 시너지바이오푸드는 인도의 식품가공업체로 전남의 
+                        농수산식품을 활용해 식품을 생산할 계획이다. 릴라이어블 코퍼레이션은 인도의 화학제품을 생산하는 기업으로 ㈜유니온의 뛰어난 친환경 
+                        흙경화제 생산기술을 이전받아 현지공장을 세운다는 방침이다.
+                    </p>
+                    <p>
+                        전남도 시장개척단에는 전남소재 식품기업 2개사와 공산품 10개사 등 총 12개사가 참여했다. 이들은 인도 콜카타, 방글라데시 다카, 인도 
+                        첸나이에서 수출상담회를 열어 4350만 달러의 상담실적과 136만 달러(7건)의 수출계약(MOU 포함)을 체결했다.
+                    </p>
+                    <p>
+                        또 ㈜에스에프시는 비이온계면활성제를, 보성포리테크(주)는 수도용 파이프 및 플라스틱 이음관을, 이일산업(주)은 솔벤트(이소파라핀)를, 
+                        에스지티(주)는 온실하우스를, 경향셀(유)은 보온·보냉 단열제를, (주)벡터네이트코리아는 연막기·생수필터를, (주)백건준설은 수륙양용준설선을, 
+                        현대엔테크(주)는 선박용 엔진·발전기를, (주)성원산업은 농기계를 출품해 각각 18회 이상의 1대1 수출상담을 했다. 이와 함께 인도, 방글라데시 등 
+                        서남아시아 시장 진출 가능성을 타진했다.
+                    </p>
+                    <p>
+                        박호 시장개척단장(전남도 국제관계대사)은 “이번 시장개척단은 최근 서남아시아 시장에서 인기있는 품목을 생산하는 업체로 구성됐다”며 “수출
+                        계약 체결 업체에 대해선 조속히 실제 수출로 이어지도록 지원하고, 상담성과가 예상되는 업체에 대해선 수출계약이 체결되도록 현지 코트라와 
+                        협력해나가겠다”고 말했다.
+                    </p>
+                </div>
+                <p>[출처] 노컷뉴스 (<a href="http://news.kmib.co.kr/article/view.asp?arcid=0013063886&code=61121111&cp=nv">http://news.kmib.co.kr/article/view.asp?arcid=0013063886&code=61121111&cp=nv</a>)</p>
+                <div class="btnBox">
+                    <a href="../pr_center/press_release.html">이전으로</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div>
+                <a href="../index.html"></a>
+                <div>
+                    <span>(주)현대엔테크</span>
+                    <span>대표이사 : 오병래</span>
+                    <span>[58023] 전남 순천시 해룡면 해룡산단1로 77</span>
+                </div>
+                <div>
+                    <span>TEL : +82-61-724-8757~8</span>
+                    <span>FAX : +82-61-724-2566</span>
+                    <span>E-MAIL : hdme8757@hanmail.net</span>
+                </div>
+                <div>
+                    <p>COPYRIGHT © HYUNDAI EN-TECH INC. ALL RIGHTS RESERVED.</p>
+                    
+                    <div>
+                        <span>관련 사이트</span>
+                        <div>
+                            <div>
+                                <span>관련 사이트 01</span>
+                                <span>관련 사이트 02</span>
+                                <span>관련 사이트 03</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 토글 active클래스 -->
+                </div>
+            </div>
+        </footer>
+        <!-- footer Fin -->
+    </div>
+</body>
+</html>

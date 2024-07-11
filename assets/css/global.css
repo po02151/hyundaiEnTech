@@ -1,0 +1,191 @@
+*{font-family: 'pretendard';}
+button{cursor: pointer;}
+.header_mo{display: none;}
+
+.header_pc,
+footer > div{width: 1520px; margin: 0 auto;}
+
+header{position: fixed; left: 0; top: -100px; width: 100%; z-index: 9999; transition: all 0.3s;}
+header.fixed{top: 0;}
+.header_pc{display: flex;}
+.header_pc h1{cursor: pointer; width: 11.2%;}
+.header_pc h1 a{display: block; height: 100px; text-indent: -9999px; display: block; background: url('../../assets/images/hyundaiN_logo.png') center / contain no-repeat; max-width: 170px; width: 100%;}
+.header_pc > div{width: 88.8%; display: flex; height: 100px; align-items: center;}
+.header_pc nav{width: 93.33%;}
+.header_pc nav > ul{display: flex; justify-content: right; align-items: center;}
+.header_pc nav > ul > li{position: relative;}
+.header_pc nav > ul > li:not(:first-child){margin-left: 6.09%;}
+.header_pc nav > ul > li > span{cursor: pointer; text-decoration: none; display: block; line-height: 100px; font-size: 19px; font-weight: 500; color: #FFFFFF;}
+.header_pc nav > ul > li:nth-child(2) > span{background: url('../../assets/images/liebherr_logo.png') center / contain no-repeat; width: 124px; height: 17px;}
+.header_pc nav > ul > li:nth-child(3) > span{background: url('../../assets/images/hyundai_logo.png') center / contain no-repeat; width: 112px; height: 17px;}
+/* .header_pc nav > ul > li:hover > span,
+.header_pc nav > ul > li.active > span{color: #C22C02;} */
+.header_pc nav > ul > li > .sub_menu{padding: 12px 0; border-radius: 5px; transition: opacity 0.3s ease-out; background-color: #fff; top: 80px; left: 50%; transform: translateX(-50%); position: absolute; visibility: hidden; opacity: 0;}
+.header_pc nav > ul > li > .sub_menu > li > span{cursor: pointer;  line-height: 20px; font-size: 17px; font-weight: 400; color: #555555; text-decoration: none; display: block; padding: 6px 30px;}
+.header_pc nav > ul > li > .sub_menu > li > span:hover{font-weight: 500; color: #444444; text-decoration: underline;}
+.header_pc nav > ul > li > .sub_menu_1{width: 155px;}
+.header_pc nav > ul > li > .sub_menu_2{width: 170px;}
+.header_pc nav > ul > li > .sub_menu_3{width: 200px;}
+.header_pc nav > ul > li > .sub_menu_4{width: 200px;}
+.header_pc nav > ul > li > .sub_menu_5{width: 155px;}
+.header_pc nav > ul > li:hover > span + .sub_menu{visibility: visible; opacity: 1;}
+.header_pc .rightBox{width: 6.67%; display: flex; align-items: center; justify-content: right;}
+.header_pc .rightBox .langBox{position: relative;}
+.header_pc .rightBox .langBox button{background: url('../../assets/images/langBtn.png') center / contain no-repeat; width: 20px; height: 20px; border: none; padding: 0;}
+.header_pc .rightBox .langBox > div{padding: 5px; display: none; box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05); border-radius: 5px; background-color: #fff; position: absolute; left: 50%; top: 33px; transform: translateX(-50%); border-radius: 10px;}
+.header_pc .rightBox .langBox > div.active{display: block;}
+.header_pc .rightBox .langBox > div > span{transition: background 0.2s ease-out; cursor: pointer; font-size: 14px; font-weight: 500; color: #999999; padding: 5px 10px; display: block;}
+.header_pc .rightBox .langBox > div > span:hover{background-color: #F9F9F9; color: #555555;}
+.header_pc .rightBox .langBox > div > span.active{color: #FF7729;}
+
+.header_pc .megaMenu{border-top: 1px solid #EEEEEE; width: 100%; background-color: #fff; left: 0; top: 100px; position: absolute; visibility: hidden; opacity: 0;}
+.header_pc .megaMenu > ul{display: flex; justify-content: space-between; margin: 0 auto; width: 1520px;}
+.header_pc .megaMenu > ul > li{padding: 30px 0; border-left: 1px solid #EEEEEE; width: 16.66%;}
+.header_pc .megaMenu > ul > li:last-child{border-right: 1px solid #EEEEEE;}
+.header_pc .megaMenu > ul > li > ul > li.none{margin-bottom: 20px;}
+.header_pc .megaMenu > ul > li > ul > li.none a{text-decoration: none; text-align: center; display: block; font-size: 18px; font-weight: 500; color: #444444;}
+.header_pc .megaMenu > ul > li > ul > li:not(.none) a{text-decoration: none; text-align: center; display: block; cursor: pointer; font-size: 16px; font-weight: 400; color: #666666;}
+.header_pc .megaMenu > ul > li > ul > li:not(.none, :last-child){margin-bottom: 15px;}
+.header_pc .megaMenu > ul > li:nth-child(4) .none{cursor: pointer;}
+.header_pc .megaMenu ul li span{display: block; text-align: center;}
+.header_pc nav > ul:hover + .megaMenu,
+.header_pc nav .megaMenu:hover{visibility: visible; opacity: 1;}
+
+
+header.active{background-color: #fff; border-bottom: 1px solid #EEEEEE;}
+header.active .header_pc h1 a{background-image: url('../../assets/images/hyundaiN_logo_active.png');}
+header.active .header_pc nav > ul > li > span{color: #444444;}
+header.active .header_pc nav > ul > li:nth-child(2) > span{background-image: url('../../assets/images/liebherr_logo_active.png');}
+header.active .header_pc nav > ul > li:nth-child(3) > span{background: url('../../assets/images/hyundai_logo_active.png') center / contain no-repeat; width: 112px; height: 17px;}
+header.active .header_pc .rightBox .langBox button{background-image: url('../../assets/images/langBtn_active.png');}
+
+
+
+/* 햄버거 버튼 */
+/* .header_pc .hamburger{margin-left: 45px; cursor: pointer; background-color: transparent; border: none; padding: 0; width: 18px; display: block;}
+.header_pc .hamburger span{display: block; width: 18px; border-bottom: 2px solid #fff; transition: all 0.4s;}
+.header_pc .hamburger span:not(:last-child){margin-bottom: 4px;}
+.header_pc.active .hamburger span{border-color: #256DCB;}
+.header_pc.active .hamburger span:nth-child(1){transform: translateY(2px) rotate(45deg);}
+.header_pc.active .hamburger span:nth-child(3){transform: translateY(-4px) rotate(-45deg);}
+.header_pc.active .hamburger span:nth-child(2){display: none;}    */
+/* 햄버거 버튼 */
+
+
+
+
+/* 모바일 햄버거 버튼 */
+.header_mo .hamburger{cursor: pointer; background-color: transparent; border: none; padding: 0; width: 20px; display: block; position: fixed; top: 38px; right: 6%;}
+.header_mo .hamburger span{display: block; width: 20px; border-bottom: 3px solid #fff; transition: all 0.4s;}
+.header_mo .hamburger span:not(:last-child){margin-bottom: 4px;}
+.header_mo.active .hamburger span{border-color: #06153A;}
+.header_mo.active .hamburger span:nth-child(1){transform: translateY(8px) rotate(45deg);}
+.header_mo.active .hamburger span:nth-child(3){transform: translateY(1px) rotate(-45deg);}
+.header_mo.active .hamburger span:nth-child(2){display: none;}   
+/* 모바일 햄버거 버튼 Fin */
+
+.header_mo{position: fixed; height: 95px; width: 100%; left: 0; top: 0; z-index: 999; font-family: 'pretendard'; padding: 0 5%; box-sizing: border-box;}
+.header_mo.active{height: 100%;}
+.header_mo .top{left: 0; top: 0; display: flex; align-items: center; padding: 0 5%; justify-content: space-between; position: fixed; width: 100%; height: 95px;}
+.header_mo .top h1 a{display: block; height: 95px; text-indent: -9999px; display: block; background: url('../../images/hyundaiN_logo.png') center / contain no-repeat; width: 100%; min-width: 170px;}
+.header_mo .nav{position: fixed; width: 100%; height: calc(100% - 95px); top: 95px; left: 0;}
+.header_mo .nav{display: none; padding: 0 5%; box-sizing: border-box; height: calc(100% - 75px); overflow-y: auto; overflow-x: hidden;}
+.header_mo.active .nav{display: block;}
+.header_mo .nav > ul{margin-top: 30px; padding-bottom: 30px;}
+.header_mo .nav > ul > li > ul{display: none;}
+.header_mo .nav > ul > li > a,
+.header_mo .nav > ul > li > span > span{color: #06153A; font-weight: 700;}
+.header_mo .nav > ul > li > a{line-height: 50px; z-index: 9; text-decoration: none; display: block;}
+.header_mo .nav > ul > li > ul > li > a,
+.header_mo .nav > ul li span{cursor: pointer; line-height: 50px; font-size: 17px; font-weight: 500; color: #555555; text-decoration: none;} 
+.header_mo .nav > .mo_sub_menu a{text-decoration: none; cursor: pointer; line-height: 50px; font-size: 17px; font-weight: 500; color: #555555; text-decoration: none;}    
+.header_mo .nav > ul > li:not(:last-child){border-bottom: 1px solid #EEEEEE;}
+.header_mo .nav > ul > li > a,
+.header_mo .nav > ul > li > span{display: block; position: relative;}
+.header_mo .nav > ul > li > span.active{color: #06153A;}
+.header_mo .nav > ul > li > span > span:nth-child(2){position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
+.header_mo .nav > ul > li > span > span:nth-child(2) img{transform: rotate(0deg); transition: 0.5s ease-in-out;}
+.header_mo .nav > ul > li > span.active > span:nth-child(2) img{transform: rotate(-180deg);}  
+/* .header_mo .mo_sub_menu{display: none;} */
+.header_mo .nav .rightBox{justify-content: space-between; padding-bottom: 30px; align-items: center; display: flex; flex-wrap: wrap; width: 100%; position: sticky; top: 100%;}
+.header_mo .nav .rightBox .langBox{display: flex; align-items: center;}
+.header_mo .nav .rightBox .langBox button{border-radius: 5px; padding: 5px 10px; border: none; background-color: transparent; font-size: 18px; color: #06153A;}
+.header_mo .nav .rightBox .langBox button:not(:first-child){margin-left: 15px;}
+.header_mo .nav .rightBox .langBox button.active{color: #fff; background-color: #06153A;}
+
+.header_mo .top{background-color: #fff;}
+.header_mo .top h1 a{background-image: url('../../assets/images/hyundaiN_logo_active.png');}
+.header_mo .top .hamburger span{border-color: #06153A;}
+.header_mo.active .nav{background-color: #fff;}
+
+body.active{overflow: hidden;}
+/* mobile_header Fin  */
+/* -----------------------------------header Fin---------------------------- */
+
+
+footer{padding: 0 30px 30px 30px; box-sizing: border-box;}
+footer > div{width: 100%; background-color: #F9F9F9; border-radius: 20px; padding: 45px 9%; box-sizing: border-box;}
+footer > div >  a{margin-bottom: 60px; display: block; background: url('../../assets/images/footer_logo.png') center / contain no-repeat; width: 170px; height: 37px;}
+footer > div > div{display: flex;}
+footer > div > div:nth-of-type(1){margin-bottom: 20px;}
+footer > div > div:nth-of-type(2){margin-bottom: 45px;}
+footer > div > div:nth-of-type(1) span,
+footer > div > div:nth-of-type(2) span{font-size: 16px; font-weight: 400; color: #666666; line-height: 19px;}
+footer > div > div:nth-of-type(1) span:not(:first-of-type),
+footer > div > div:nth-of-type(2) span:not(:first-of-type){padding-left: 25px; margin-left: 25px; position: relative;}
+footer > div > div:nth-of-type(1) span:not(:first-of-type):before,
+footer > div > div:nth-of-type(2) span:not(:first-of-type):before{content: ''; width: 1px; height: 18px; background-color: #DDDDDD; position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+footer > div > div:nth-of-type(3){justify-content: space-between; align-items: flex-end;}
+footer > div > div:nth-of-type(3) p{font-size: 14px; line-height: 16px; color: #999999; font-weight: 300;}
+footer > div > div:nth-of-type(3) > div{position: relative;}
+footer > div > div:nth-of-type(3) > div > span{cursor: pointer; position: relative; font-size: 16px; font-weight: 500; color: #999999; padding: 15px 25px; box-sizing: border-box; display: inline-block; width: 275px; border: 1px solid #DDDDDD; border-radius: 5px;}
+footer > div > div:nth-of-type(3) > div > span:after{transition: transform 0.3s ease-out; content: ''; display: block; background: url('../../assets/images/footer_arrow.png') center / contain no-repeat; width: 12px; height: 7px; position: absolute; right: 25px; top: 50%; transform: translateY(-50%);}
+footer > div > div:nth-of-type(3) > div > div{padding-bottom: 10px; position: absolute; z-index: 1; width: 275px; left: 0; top: -130px; visibility: hidden; opacity: 0;}
+footer > div > div:nth-of-type(3) > div.active > span{background-color: #06153A; border-color: #06153A; color: #fff;}
+footer > div > div:nth-of-type(3) > div.active > span:after{transform: rotate(-180deg);}
+footer > div > div:nth-of-type(3) > div.active > div{visibility: visible; opacity: 1;}
+footer > div > div:nth-of-type(3) > div > div > div{padding: 10px 0; border: 1px solid #DDDDDD; border-radius: 5px; background-color: #fff;}
+footer > div > div:nth-of-type(3) > div > div > div > span{cursor: pointer; display: block; font-size: 15px; font-weight: 500; color: #666666; padding: 10px 15px; box-sizing: border-box;}
+footer > div > div:nth-of-type(3) > div > div > div > span:hover{background-color: #F9F9F9;}
+
+
+.topBtn{position: fixed; right: 20px; bottom: 10px; z-index: 999; transition: background 0.2s ease-out; width: 52px; height: 52px; border-radius: 100%; border: none; background-color: #F9F9F9;}
+.topBtn i{color: #999999; font-size: 14px;}
+.topBtn:hover{background-color: #FF7729;}
+.topBtn:hover i{color: #fff;}
+
+
+@media (max-width:1600px){
+    .header_pc,
+    footer > div,
+    .header_pc .megaMenu > ul{width: 90%;}
+    footer{padding: 0 0 30px 0;}
+}
+
+@media (max-width:1024px){
+    .header_pc{display: none;}
+    .header_mo{display: block;}
+
+
+    footer > div{padding: 45px 3%;}
+    footer > div > a{margin-bottom: 30px;}
+    footer > div > div{flex-wrap: wrap;}
+    footer > div > div > span{width: 100%;}
+    footer > div > div:nth-of-type(1) span:not(:first-of-type),
+    footer > div > div:nth-of-type(2) span:not(:first-of-type){padding-left: 0; margin-left: 0;}
+    footer > div > div:nth-of-type(1) span:not(:first-of-type):before,
+    footer > div > div:nth-of-type(2) span:not(:first-of-type):before{display: none;}
+    footer > div > div:nth-of-type(1),
+    footer > div > div span:not(:last-of-type){margin-bottom: 10px;}
+    footer > div > div:nth-of-type(2){margin-bottom: 30px;}
+    footer > div > div:nth-of-type(3){flex-wrap: wrap;}
+    footer > div > div:nth-of-type(3) > *{width: 100%;}
+    footer > div > div:nth-of-type(3) p{margin-bottom: 30px;}
+    footer > div > div:nth-of-type(3) > div > div{top: -150px;}
+}
+
+
+@media (max-width:768px){
+    footer > div > div:nth-of-type(3) > div > span,
+    footer > div > div:nth-of-type(3) > div > div{width: 100%;}
+}
